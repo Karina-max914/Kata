@@ -1,0 +1,66 @@
+/*rellenar los comentarios explicando que hace cada linea*/
+.caja1{
+    width:200px;/*ancho */
+    height:100px;/*alto */
+    background-color: red;/*Color de fondo de la caja */
+    border:2px solid green;/*Contextura Color del borde de la caja */
+    border:2px black solid;/*Borde  */
+}
+/*¿que le falta a los estilos de la caja 2 para que funcione?*//*el punto antes de la palabra caja*/
+.caja2{
+    width: 150px;/*ancho */
+    height: 150px;/*alto */
+    background-color:yellow;/*Color de fondo de la caja */
+    border:2px dotted orange;/*Borde punteado */
+   
+}
+.caja3{
+    width: 200px;/*ancho */
+    height: 200px;/*alto */
+    background-color:blue;/*Color de fondo de la caja */
+    border-radius: 50%;/*Redondear las esquinas */
+    border:2px solid black;/* */
+}
+.caja4{/*escribi los estilos para que la caja 4 sea rectangular, marron y tenga borde rosa*/
+    background-color: brown;
+    border: 5px solid pink;
+    width: 300px;
+    height: 150px;
+}
+img{
+    width: 10%;
+    max-width: 800px;
+}
+/*completa los estilos para que el sitio sea responsive*/
+
+@media all and (min-width:600px) and (max-width: 1023px)/*vista tablet*/{
+     .caja1, .caja2, .caja3, .caja4 {
+        width: 45%;
+        margin: 2.5%;
+    }
+    .caja4 {
+        width: 95%;
+        margin: 2.5%;
+    }
+    img {
+        width: 90%;
+        max-width: 800px; /* Ajustar el tamaño máximo de la imagen */
+    }
+}
+@media all and (max-width: 599px)/*vista celular*/{
+    .caja1, .caja2, .caja3, .caja4 {
+        width: 90%;
+        margin: 5%;
+        display: block; /* Asegura que sean bloques */
+    }
+     .caja4 {
+        width: 90%;
+        margin: 5%;
+    }
+    img {
+        width: 90%;
+        max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+    }
+}
+@media (min-width: 600px) {}
+
